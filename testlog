@@ -1,0 +1,57 @@
+> Task :clean
+
+> Task :compileJava
+
+> Task :processResources NO-SOURCE
+> Task :classes
+> Task :bootJar
+> Task :jar SKIPPED
+> Task :assemble
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+
+> Task :test
+
+test.pivotal.pal.trackerapi.TimeEntryApiTest > testList() FAILED
+    org.opentest4j.AssertionFailedError at TimeEntryApiTest.java:123
+
+test.pivotal.pal.trackerapi.TimeEntryApiTest > testRead() FAILED
+    org.opentest4j.AssertionFailedError at TimeEntryApiTest.java:123
+
+test.pivotal.pal.trackerapi.TimeEntryApiTest > testCreate() FAILED
+    org.opentest4j.AssertionFailedError at TimeEntryApiTest.java:37
+
+test.pivotal.pal.trackerapi.TimeEntryApiTest > testDelete() FAILED
+    org.opentest4j.AssertionFailedError at TimeEntryApiTest.java:123
+
+test.pivotal.pal.trackerapi.TimeEntryApiTest > testUpdate() FAILED
+    org.opentest4j.AssertionFailedError at TimeEntryApiTest.java:123
+
+test.pivotal.pal.tracker.InMemoryTimeEntryRepositoryTest > create() FAILED
+    org.opentest4j.AssertionFailedError at InMemoryTimeEntryRepositoryTest.java:24
+
+test.pivotal.pal.tracker.InMemoryTimeEntryRepositoryTest > delete() FAILED
+    java.lang.AssertionError at InMemoryTimeEntryRepositoryTest.java:101
+
+test.pivotal.pal.tracker.InMemoryTimeEntryRepositoryTest > update() FAILED
+    org.opentest4j.AssertionFailedError at InMemoryTimeEntryRepositoryTest.java:77
+
+test.pivotal.pal.tracker.InMemoryTimeEntryRepositoryTest > deleteKeepsTrackOfLatestIdProperly() FAILED
+    org.opentest4j.AssertionFailedError at InMemoryTimeEntryRepositoryTest.java:112
+
+test.pivotal.pal.tracker.InMemoryTimeEntryRepositoryTest > find() FAILED
+    org.opentest4j.AssertionFailedError at InMemoryTimeEntryRepositoryTest.java:41
+
+test.pivotal.pal.tracker.InMemoryTimeEntryRepositoryTest > list() FAILED
+    java.lang.AssertionError at InMemoryTimeEntryRepositoryTest.java:64
+
+test.pivotal.pal.tracker.TimeEntryControllerTest > testRead() FAILED
+    org.mockito.exceptions.verification.TooManyActualInvocations at TimeEntryControllerTest.java:61
+
+test.pivotal.pal.tracker.TimeEntryControllerTest > testUpdate() FAILED
+    org.mockito.exceptions.verification.TooManyActualInvocations at TimeEntryControllerTest.java:104
+2020-05-27 07:43:05.475  INFO 8488 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+
+> Task :test FAILED
+5 actionable tasks: 5 executed
